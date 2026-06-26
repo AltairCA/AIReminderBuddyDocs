@@ -82,7 +82,7 @@ The App may request the following permissions:
 
 Permissions are used only for these features. You can deny permissions, though some features will not work without them.
 
-The App does **not** use the microphone for recording in normal use. If a microphone permission appears on your device, it may come from a system library dependency; the App does not record audio.
+The App does **not** use the microphone and does not request microphone access on Android or iOS.
 
 ---
 
