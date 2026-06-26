@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for AIReminderBuddy — how we handle your data on Android and iOS.">
+  <title>Privacy Policy — AIReminderBuddy</title>
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="./" class="logo">
+        <img src="assets/icon.png" alt="" width="36" height="36">
+        AIReminderBuddy
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./">Home</a></li>
+          <li><a href="./#features">Features</a></li>
+          <li><a href="./#privacy">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: June 26, 2026 · Last updated: June 26, 2026</p>
+    </div>
+  </div>
+
+  <article class="legal-content">
+    <p>
+      This Privacy Policy describes how <strong>AIReminderBuddy</strong> (“the App,” “we,” “us,” or “our”)
+      handles information when you use our mobile application on Android and iOS.
+    </p>
+    <p>
+      <strong>Developer / data controller:</strong><br>
+      Michika Perera<br>
+      Contact: <a href="mailto:altairserver@gmail.com">altairserver@gmail.com</a>
+    </p>
+    <p>If you have questions about this policy, contact us at the email above.</p>
+
+    <div class="summary-box">
+      <p>
+        <strong>Summary:</strong> AIReminderBuddy is a <strong>local-first</strong> reminder app.
+        Your reminders, lists, photos, and settings are stored <strong>on your device</strong>.
+        We do <strong>not</strong> operate a user account system and we do <strong>not</strong> collect
+        your personal data on our own servers in the current version of the App.
+      </p>
+      <p style="margin-top: 0.75rem;">
+        Optional AI features use <strong>your own API key</strong> and send content
+        <strong>directly from your device</strong> to the AI provider you choose (Google Gemini, OpenRouter, or OpenAI).
+        We do not receive or store that content on our servers.
+      </p>
+    </div>
+
+    <h2>1. Information the App Stores on Your Device</h2>
+    <p>The App stores the following data locally on your phone or tablet:</p>
+    <table>
+      <thead>
+        <tr><th>Data type</th><th>Purpose</th><th>Stored where</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Reminders and schedules</td><td>Notify you when tasks are due</td><td>SQLite database on device</td></tr>
+        <tr><td>Reminder history (done/skipped)</td><td>Show your activity</td><td>SQLite database on device</td></tr>
+        <tr><td>Scanned objects and library entries</td><td>Organize items you track</td><td>SQLite database on device</td></tr>
+        <tr><td>Photos you capture or import</td><td>Display in your library; optional AI analysis</td><td>App-private storage on device</td></tr>
+        <tr><td>Text descriptions you enter</td><td>Manual reminders and AI text suggestions</td><td>SQLite database on device</td></tr>
+        <tr><td>Lists and list items</td><td>Shopping, todo, and other lists</td><td>SQLite database on device</td></tr>
+        <tr><td>App settings</td><td>Notifications, default times, onboarding state</td><td>SQLite database on device</td></tr>
+        <tr><td>AI provider choice and connection status</td><td>Remember which AI service you connected</td><td>SQLite database on device (no secret keys)</td></tr>
+        <tr><td>API keys (if you connect AI)</td><td>Authenticate with your chosen AI provider</td><td>Device secure storage (Expo SecureStore)</td></tr>
+      </tbody>
+    </table>
+    <p>We do <strong>not</strong> sync this data to our servers in the current version of the App.</p>
+
+    <h2>2. Information Sent to Third-Party AI Providers (Optional)</h2>
+    <p>
+      AI features are <strong>optional</strong>. If you choose to connect an AI provider and use scan or
+      text-suggestion features, the App sends requests <strong>directly from your device</strong> to that
+      provider’s API using <strong>your API key</strong>.
+    </p>
+    <p>Depending on what you do, the following may be sent to your chosen provider:</p>
+    <ul>
+      <li><strong>Photos</strong> you select or capture (compressed/resized as JPEG before sending)</li>
+      <li><strong>Text</strong> you type (object descriptions, list content, shared text)</li>
+      <li><strong>System prompts</strong> required to request structured task suggestions</li>
+    </ul>
+    <p>Supported providers (you choose one):</p>
+    <table>
+      <thead>
+        <tr><th>Provider</th><th>Privacy policy</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Google (Gemini API)</td><td><a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></td></tr>
+        <tr><td>OpenRouter</td><td><a href="https://openrouter.ai/privacy" rel="noopener">openrouter.ai/privacy</a></td></tr>
+        <tr><td>OpenAI</td><td><a href="https://openai.com/policies/privacy-policy" rel="noopener">openai.com/policies/privacy-policy</a></td></tr>
+      </tbody>
+    </table>
+    <p><strong>Important:</strong></p>
+    <ul>
+      <li>We do <strong>not</strong> receive, store, or review the content you send to AI providers.</li>
+      <li>Your relationship with the AI provider (billing, quotas, retention, and how they use API inputs) is governed by <strong>that provider’s terms and privacy policy</strong>.</li>
+      <li>You can disconnect AI at any time in Settings, which removes your stored API key from the device.</li>
+      <li>You can use the App <strong>without AI</strong> by creating reminders and lists manually.</li>
+    </ul>
+    <p>
+      When using OpenRouter, the App may include identifying headers required by that service
+      (such as app name and referer URL). No user account information is included.
+    </p>
+
+    <h2>3. Device Permissions</h2>
+    <p>The App may request the following permissions:</p>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Why we ask</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Camera</strong></td><td>Take photos to scan objects or add list items</td></tr>
+        <tr><td><strong>Photos / media library</strong></td><td>Import images you already have</td></tr>
+        <tr><td><strong>Notifications</strong></td><td>Deliver local reminders when tasks are due</td></tr>
+      </tbody>
+    </table>
+    <p>
+      Permissions are used only for these features. You can deny permissions, though some features will not work without them.
+    </p>
+    <p>The App does <strong>not</strong> use the microphone and does not request microphone access on Android or iOS.</p>
+
+    <h2>4. Share Into the App</h2>
+    <p>
+      If you share text or an image from another app into AIReminderBuddy, that content is handled
+      <strong>on your device</strong> to create reminders or lists. Shared content is only sent to an AI
+      provider if you explicitly use an AI-powered action and have connected a provider.
+    </p>
+
+    <h2>5. What We Do Not Collect</h2>
+    <p>In the current version of the App, we do <strong>not</strong>:</p>
+    <ul>
+      <li>Require you to create an account</li>
+      <li>Operate our own backend that stores your reminders or photos</li>
+      <li>Sell your personal information</li>
+      <li>Show third-party advertising</li>
+      <li>Use analytics or advertising SDKs to track you across apps</li>
+      <li>Collect precise location data</li>
+      <li>Access your contacts, calendar, or SMS</li>
+    </ul>
+
+    <h2>6. Local Notifications</h2>
+    <p>
+      Reminders are scheduled using your device’s local notification system. Notification content
+      (titles, times) stays on your device and is delivered by your operating system.
+      We do not send push notifications through our own servers.
+    </p>
+
+    <h2>7. Children’s Privacy</h2>
+    <p>
+      AIReminderBuddy is not directed at children under 13 (or the minimum age required in your country).
+      We do not knowingly collect personal information from children. If you believe a child has provided
+      information through the App, contact us and we will help you understand how to remove locally stored
+      data (typically by uninstalling the App or clearing app data).
+    </p>
+
+    <h2>8. Data Retention and Deletion</h2>
+    <p>Data remains on your device until you:</p>
+    <ul>
+      <li>Delete individual reminders, objects, lists, or images inside the App</li>
+      <li>Disconnect an AI provider (removes the API key from secure storage)</li>
+      <li>Clear the App’s storage in your device settings</li>
+      <li>Uninstall the App</li>
+    </ul>
+    <p>
+      Uninstalling the App removes locally stored data from your device, subject to your operating system’s behavior.
+      We do not retain copies of your data on our servers in the current version.
+    </p>
+
+    <h2>9. Security</h2>
+    <p>We use reasonable measures available on mobile platforms, including:</p>
+    <ul>
+      <li>Storing API keys in the device’s secure storage</li>
+      <li>Keeping app data in the app’s private sandbox</li>
+      <li>Sending AI requests over HTTPS</li>
+    </ul>
+    <p>
+      No method of storage or transmission is 100% secure. You are responsible for keeping your device and API keys safe.
+    </p>
+
+    <h2>10. International Users</h2>
+    <p>
+      If you use optional AI features, your content may be processed in countries where your chosen AI provider
+      operates (for example, the United States). Those providers’ privacy policies apply to that processing.
+    </p>
+
+    <h2>11. Your Rights</h2>
+    <p>
+      Depending on where you live, you may have rights to access, correct, delete, or restrict processing of your personal information.
+    </p>
+    <p>
+      Because the App stores data <strong>locally</strong> and we do not operate a cloud account system,
+      you can exercise most rights directly by managing or deleting data in the App or uninstalling it.
+    </p>
+    <p>
+      To contact us about privacy requests, email:
+      <a href="mailto:altairserver@gmail.com"><strong>altairserver@gmail.com</strong></a>
+    </p>
+
+    <h2>12. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. We will post the updated policy at the same URL
+      and change the “Last updated” date. Continued use of the App after changes means you accept the updated policy.
+    </p>
+
+    <h2>13. Google Play Data Safety (Summary)</h2>
+    <table>
+      <thead>
+        <tr><th>Category</th><th>Declaration guidance</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Data collected by <strong>you (developer)</strong></td><td>None, or minimal technical data only if you add analytics later</td></tr>
+        <tr><td>Data shared with <strong>third parties</strong></td><td>Only when user opts into AI — photos/text sent to user’s chosen AI provider</td></tr>
+        <tr><td>Data encrypted in transit</td><td>Yes (HTTPS for AI API calls)</td></tr>
+        <tr><td>Data deletion</td><td>User can delete in-app or uninstall</td></tr>
+        <tr><td>Account required</td><td>No</td></tr>
+      </tbody>
+    </table>
+    <p><em>Update this table if you add analytics, crash reporting, accounts, or a backend.</em></p>
+
+    <h2>14. Contact</h2>
+    <p>
+      <strong>Michika Perera</strong><br>
+      Email: <a href="mailto:altairserver@gmail.com"><strong>altairserver@gmail.com</strong></a><br>
+      App package ID: <code>com.aireminderbuddy.app</code>
+    </p>
+
+    <p style="margin-top: 2.5rem;">
+      <a href="./" class="btn btn-ghost">← Back to home</a>
+    </p>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/icon.png" alt="" width="32" height="32">
+        <span>AIReminderBuddy</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="./">Home</a></li>
+        <li><a href="./#features">Features</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="mailto:altairserver@gmail.com">Contact</a></li>
+      </ul>
+      <p class="footer-copy">
+        © 2026 Michika Perera · <a href="privacy-policy.html">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

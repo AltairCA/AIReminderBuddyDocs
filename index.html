@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AIReminderBuddy — scan objects, get smart care reminders, and stay on top of plants, cars, appliances, and more. Local-first, optional AI.">
+  <title>AIReminderBuddy — Your reminder buddy for everything you own</title>
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="./" class="logo">
+        <img src="assets/icon.png" alt="" width="36" height="36">
+        AIReminderBuddy
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-badges">
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Local-first
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Smart reminders
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 1 4 4v1h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h2V6a4 4 0 0 1 4-4z"/></svg>
+              Optional AI
+            </span>
+          </div>
+          <h1>Look at what you have.<br><span>Know what to do.</span></h1>
+          <p class="lead">
+            A reminder buddy for plants, cars, appliances, and everything in between.
+            Scan a photo, describe an item, or add reminders manually — on your schedule, in your app.
+          </p>
+          <div class="cta-row">
+            <a href="#features" class="btn btn-primary">Explore features</a>
+            <a href="privacy-policy.html" class="btn btn-ghost">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="phone-wrap">
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-status">
+                <span>9:41</span>
+                <span>●●●</span>
+              </div>
+              <div class="phone-content">
+                <p class="ui-title">Upcoming</p>
+                <div class="ui-card">
+                  <div class="ui-card-icon">🌿</div>
+                  <div class="ui-card-text">
+                    <strong>Water Monstera</strong>
+                    <span>Tomorrow · 9:00 AM</span>
+                    <div class="ui-chip">Every 7 days</div>
+                  </div>
+                </div>
+                <div class="ui-card">
+                  <div class="ui-card-icon">🚗</div>
+                  <div class="ui-card-text">
+                    <strong>Oil change</strong>
+                    <span>Friday · 10:00 AM</span>
+                    <div class="ui-chip">Every 90 days</div>
+                  </div>
+                </div>
+                <div class="ui-card">
+                  <div class="ui-card-icon">🔧</div>
+                  <div class="ui-card-text">
+                    <strong>Replace HVAC filter</strong>
+                    <span>Next week</span>
+                    <div class="ui-chip">Every 30 days</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+      <div class="container">
+        <span class="section-label">Features</span>
+        <h2 class="section-title">Everything you need to stay on top of care tasks</h2>
+        <p class="section-sub">From a quick photo to a recurring reminder — with or without AI. Your data stays on your device.</p>
+
+        <div class="features-grid">
+
+          <!-- Scan + AI -->
+          <div class="feature-row">
+            <div class="feature-copy">
+              <h3>📸 Scan &amp; suggest</h3>
+              <p>
+                Point your camera at a plant, car part, appliance label, or anything you want to track.
+                Connect your own free AI key and get smart task suggestions in seconds.
+              </p>
+              <ul class="feature-list">
+                <li>Camera or photo library import</li>
+                <li>Google Gemini or OpenRouter — your key, your choice</li>
+                <li>Review and edit every suggestion before saving</li>
+              </ul>
+            </div>
+            <div class="feature-phone">
+              <div class="phone">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                  <div class="phone-status"><span>Scan</span><span></span></div>
+                  <div class="phone-content">
+                    <div class="ui-scan-preview">🪴</div>
+                    <p style="font-size:0.72rem;font-weight:700;margin:0 0 8px;">Suggested tasks</p>
+                    <div class="ui-suggestion"><div class="ui-check">✓</div> Water weekly</div>
+                    <div class="ui-suggestion"><div class="ui-check">✓</div> Rotate for even light</div>
+                    <div class="ui-suggestion"><div class="ui-check">✓</div> Fertilize monthly</div>
+                    <div class="ui-suggestion"><div class="ui-check">✓</div> Check for pests</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reminders -->
+          <div class="feature-row reverse">
+            <div class="feature-copy">
+              <h3>🔔 Local reminders</h3>
+              <p>
+                Schedule recurring care tasks with flexible frequencies — daily, weekly, monthly, or custom intervals.
+                Notifications fire locally on your device. No account, no cloud push server.
+              </p>
+              <ul class="feature-list">
+                <li>Mark done, snooze, or skip from the notification</li>
+                <li>Quick-add reminders without AI</li>
+                <li>Tap a notification to jump straight to the task</li>
+              </ul>
+            </div>
+            <div class="feature-phone">
+              <div class="phone">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                  <div class="phone-status"><span>Reminder</span><span></span></div>
+                  <div class="phone-content">
+                    <div class="ui-scan-preview" style="height:80px;font-size:2rem;background:linear-gradient(135deg,#bbdefb,#90caf9);">🌿</div>
+                    <p class="ui-title" style="font-size:0.95rem;">Water Monstera</p>
+                    <p style="font-size:0.68rem;color:var(--text-muted);margin:0 0 12px;">Bedroom · Every 7 days</p>
+                    <div class="ui-card" style="justify-content:center;gap:6px;padding:10px;">
+                      <span style="font-size:0.72rem;font-weight:600;color:var(--accent);">✓ Done</span>
+                      <span style="font-size:0.72rem;color:var(--text-muted);">· Snooze · Skip</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Library -->
+          <div class="feature-row">
+            <div class="feature-copy">
+              <h3>📚 Object library</h3>
+              <p>
+                Every scan becomes a library entry with photos, labels, and linked reminders.
+                Browse scanned items, quick-adds, and lists from one place.
+              </p>
+              <ul class="feature-list">
+                <li>Thumbnail grid of everything you track</li>
+                <li>Link multiple reminders to one object</li>
+                <li>Full history of completed and skipped tasks</li>
+              </ul>
+            </div>
+            <div class="feature-phone">
+              <div class="phone">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                  <div class="phone-status"><span>Library</span><span></span></div>
+                  <div class="phone-content">
+                    <div class="ui-tabs">
+                      <div class="ui-tab active">Scanned</div>
+                      <div class="ui-tab">Quick adds</div>
+                      <div class="ui-tab">Lists</div>
+                    </div>
+                    <div class="ui-grid">
+                      <div class="ui-thumb">🪴</div>
+                      <div class="ui-thumb" style="background:linear-gradient(135deg,#c5cae9,#9fa8da);">🚗</div>
+                      <div class="ui-thumb" style="background:linear-gradient(135deg,#ffe0b2,#ffcc80);">🔧</div>
+                      <div class="ui-thumb" style="background:linear-gradient(135deg,#f8bbd0,#f48fb1);">🐾</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lists + Share -->
+          <div class="feature-row reverse">
+            <div class="feature-copy">
+              <h3>📝 Lists &amp; share-in</h3>
+              <p>
+                Build shopping, todo, and packing lists. Share text or photos from any app into AIReminderBuddy
+                to create reminders or checklists — with optional AI parsing.
+              </p>
+              <ul class="feature-list">
+                <li>Category-based list templates</li>
+                <li>Share from browser, photos, or notes</li>
+                <li>Manual lists work without AI</li>
+              </ul>
+            </div>
+            <div class="feature-phone">
+              <div class="phone">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                  <div class="phone-status"><span>Grocery list</span><span></span></div>
+                  <div class="phone-content">
+                    <div class="ui-list-item"><div class="ui-circle done"></div> Milk</div>
+                    <div class="ui-list-item"><div class="ui-circle done"></div> Bread</div>
+                    <div class="ui-list-item"><div class="ui-circle"></div> Eggs</div>
+                    <div class="ui-list-item"><div class="ui-circle"></div> Coffee beans</div>
+                    <div class="ui-list-item"><div class="ui-circle"></div> Olive oil</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works" style="background: var(--surface);">
+      <div class="container">
+        <span class="section-label">How it works</span>
+        <h2 class="section-title">Three steps to never forget again</h2>
+        <p class="section-sub">AI is optional at every step. You can always add reminders manually.</p>
+
+        <div class="steps">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <h3>Capture or describe</h3>
+            <p>Take a photo, pick from your gallery, type a description, or share content from another app.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <h3>Review suggestions</h3>
+            <p>AI proposes recurring tasks — edit titles, frequencies, and due dates before anything is saved.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <h3>Get reminded locally</h3>
+            <p>Reminders live on your device. Notifications fire when tasks are due — mark done, snooze, or skip.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audience -->
+    <section>
+      <div class="container">
+        <span class="section-label">Built for</span>
+        <h2 class="section-title">Anyone who owns things that need care</h2>
+        <p class="section-sub">Smart defaults for object care — without researching schedules yourself.</p>
+
+        <div class="audience-grid">
+          <div class="audience-card">
+            <div class="emoji">🌱</div>
+            <h4>Plant parents</h4>
+            <p>Watering, fertilizing, repotting schedules</p>
+          </div>
+          <div class="audience-card">
+            <div class="emoji">🚗</div>
+            <h4>Car owners</h4>
+            <p>Oil changes, tire rotation, registration</p>
+          </div>
+          <div class="audience-card">
+            <div class="emoji">🏠</div>
+            <h4>Homeowners</h4>
+            <p>HVAC filters, water softener, appliances</p>
+          </div>
+          <div class="audience-card">
+            <div class="emoji">🐾</div>
+            <h4>Pet care</h4>
+            <p>Vet visits, grooming, medication</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy -->
+    <section id="privacy">
+      <div class="container">
+        <div class="privacy-band">
+          <div>
+            <h2>Your data stays on your phone</h2>
+            <p>
+              AIReminderBuddy is local-first. Reminders, photos, lists, and settings are stored on your device.
+              No account required. No ads. No analytics tracking.
+            </p>
+            <div class="privacy-pillars">
+              <span class="privacy-pillar">🔒 API keys in secure storage</span>
+              <span class="privacy-pillar">📴 Works offline</span>
+              <span class="privacy-pillar">🚫 No ad ID</span>
+            </div>
+            <a href="privacy-policy.html" class="btn btn-primary" style="margin-top: 1.25rem;">Read Privacy Policy</a>
+          </div>
+          <div class="privacy-icon-grid">
+            <div class="privacy-icon-card">
+              <div class="icon">📱</div>
+              <span>On-device storage</span>
+            </div>
+            <div class="privacy-icon-card">
+              <div class="icon">🤖</div>
+              <span>Optional BYOK AI</span>
+            </div>
+            <div class="privacy-icon-card">
+              <div class="icon">🔐</div>
+              <span>HTTPS for AI calls</span>
+            </div>
+            <div class="privacy-icon-card">
+              <div class="icon">🗑️</div>
+              <span>Delete anytime</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/icon.png" alt="" width="32" height="32">
+        <span>AIReminderBuddy</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="mailto:altairserver@gmail.com">Contact</a></li>
+      </ul>
+      <p class="footer-copy">
+        © 2026 Michika Perera · <code>com.aireminderbuddy.app</code> ·
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
