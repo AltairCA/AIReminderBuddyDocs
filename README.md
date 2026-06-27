@@ -27,9 +27,17 @@ AIReminderBuddyDocs/
 ├── privacy-policy.html     ← Privacy policy (Play Console link)
 ├── privacy-policy.md       ← Source copy (keep in sync when editing policy)
 ├── styles.css
+├── scripts/
+│   └── capture-screenshot.sh  ← Capture Android screenshots via adb
 ├── assets/
 │   ├── icon.png
-│   └── splash-icon.png
+│   ├── splash-icon.png
+│   └── screenshots/        ← Real app screenshots for phone mockups
+│       ├── home.png
+│       ├── review-suggestions.png
+│       ├── reminder-detail.png
+│       ├── library.png
+│       └── list-detail.png
 └── .nojekyll               ← Serves static HTML as-is
 ```
 
@@ -38,6 +46,39 @@ AIReminderBuddyDocs/
 - **Home page:** edit `index.html` and `styles.css`
 - **Privacy policy:** edit `privacy-policy.md`, then mirror changes in `privacy-policy.html`
 - **App icon:** replace `assets/icon.png` (copied from `apps/mobile/assets/images/icon.png`)
+
+## Refreshing app screenshots
+
+Phone mockups on the landing page use real captures from a connected Android device.
+
+1. Connect one Android device with USB debugging enabled and open AIReminderBuddy on the screen you want.
+2. From this repo root, run:
+
+```bash
+chmod +x scripts/capture-screenshot.sh   # first time only
+./scripts/capture-screenshot.sh home.png
+```
+
+3. Repeat for each file under `assets/screenshots/`:
+
+| File | Screen to show |
+|------|----------------|
+| `home.png` | Home tab with upcoming reminders |
+| `review-suggestions.png` | Scanned object detail (AI labels + reminders) |
+| `reminder-detail.png` | Reminder detail |
+| `library.png` | Library tab, Scanned view |
+| `list-detail.png` | List detail with checklist items |
+
+**Deep links** (optional navigation aid):
+
+```bash
+adb shell am start -a android.intent.action.VIEW -d "aireminderbuddy://library" com.aireminderbuddy.app
+adb shell am start -a android.intent.action.VIEW -d "aireminderbuddy://reminder/<id>" com.aireminderbuddy.app
+adb shell am start -a android.intent.action.VIEW -d "aireminderbuddy://list/<id>" com.aireminderbuddy.app
+adb shell am start -a android.intent.action.VIEW -d "aireminderbuddy://object/<id>" com.aireminderbuddy.app
+```
+
+Screenshots are full-device PNGs (1080×2340). The site scales them inside CSS phone frames.
 
 ## Google Play Console
 
